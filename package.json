@@ -16,6 +16,7 @@
   "description": "",
   "dependencies": {
     "@react-input/mask": "^1.2.10",
+    "@react-types/shared": "^3.25.0",
     "color2k": "^2.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -73,6 +74,7 @@
     "react-refresh-typescript": "^2.0.9",
     "serve": "^14.2.3",
     "style-loader": "^4.0.0",
+    "tailwind-merge": "^2.5.4",
     "tailwindcss": "^3.4.13",
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
