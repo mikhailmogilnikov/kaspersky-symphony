@@ -25,9 +25,10 @@ export function useText(props: UseTextProps) {
         weight,
         color,
         opacity,
+        heading,
         className,
       }),
-    [size, weight, color, opacity, className],
+    [size, weight, color, opacity, heading, className],
   );
 
   return { Component, children, styles, ref, ...otherProps };

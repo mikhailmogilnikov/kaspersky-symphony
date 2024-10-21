@@ -1,3 +1,4 @@
+/* eslint-disable @conarti/feature-sliced/absolute-relative */
 import { Selection as AriaSharedSelection } from '@react-types/shared';
 
 export type As<Props = any> = React.ElementType<Props>;

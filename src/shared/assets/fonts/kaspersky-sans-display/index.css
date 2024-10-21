@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Kaspersky Sans Display';
+  src:
+    url('./light/KasperskySansDisplay-Lt.woff2') format('woff2'),
+    url('./light/KasperskySansDisplay-Lt.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kaspersky Sans Display';
+  src:
+    url('./regular/KasperskySansDisplay-Rg.woff2') format('woff2'),
+    url('./regular/KasperskySansDisplay-Rg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kaspersky Sans Display';
+  src:
+    url('./medium/KasperskySansDisplay-Md.woff2') format('woff2'),
+    url('./medium/KasperskySansDisplay-Md.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kaspersky Sans Display';
+  src:
+    url('./semibold/KasperskySansDisplay-SmBd.woff2') format('woff2'),
+    url('./semibold/KasperskySansDisplay-SmBd.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kaspersky Sans Display';
+  src:
+    url('./bold/KasperskySansDisplay-Bold.woff2') format('woff2'),
+    url('./bold/KasperskySansDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kaspersky Sans Display';
+  src:
+    url('./extrabold/KasperskySansDisplay-XBd.woff2') format('woff2'),
+    url('./extrabold/KasperskySansDisplay-XBd.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

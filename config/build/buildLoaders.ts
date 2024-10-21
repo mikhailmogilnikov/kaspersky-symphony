@@ -18,6 +18,15 @@ export const buildLoaders = (options: BuildOptions): ModuleOptions['rules'] => {
   const assetsLoader = {
     test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf)$/i,
     type: 'asset/resource',
+    generator: {
+      filename: (pathData: any) => {
+        if (/\.(woff|woff2|eot|ttf)$/i.test(pathData.filename)) {
+          return 'fonts/[name][ext]';
+        }
+
+        return 'assets/[name][ext]';
+      },
+    },
   };
 
   // Для преобразования svg в React-компоненты

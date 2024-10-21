@@ -9,12 +9,19 @@ const pluginOptions: CorePluginConfig = {
 };
 
 const config: Config = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ['./public/index.html', './src/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'class',
   future: {
     hoverOnlyWhenSupported: true,
   },
-  theme: {},
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Kaspersky Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        'sans-display': ['Kaspersky Sans Display', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+    },
+  },
   plugins: [corePlugin(pluginOptions)],
 };
 

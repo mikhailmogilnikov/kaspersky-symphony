@@ -53,6 +53,12 @@ export const textTv = tv({
       9: 'opacity-90',
       10: 'opacity-100',
     },
+    heading: {
+      1: 'font-sans',
+      2: 'font-sans',
+      3: 'font-sans',
+      4: 'font-sans',
+    },
   },
   defaultVariants: {
     size: 'base',
