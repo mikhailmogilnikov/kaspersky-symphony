@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { Suspense } from 'react';
 
 import { HomePage } from '@/pages/home';
@@ -19,6 +19,6 @@ export const router = createBrowserRouter([
         <HomePage />
       </Suspense>
     ),
-    errorElement: <p>Такого маршрута не существует</p>,
+    errorElement: <Navigate to='/' />,
   },
 ]);

@@ -1,4 +1,7 @@
-import { tv, VariantProps } from 'tailwind-variants';
+/* eslint-disable @conarti/feature-sliced/absolute-relative */
+import { VariantProps } from 'tailwind-variants';
+
+import { tv } from '@/shared/lib/utils/ui/tv';
 
 export const buttonTv = tv({
   base: 'z-0 group inline-flex items-center justify-center relative box-border appearance-none outline-none select-none whitespace-nowrap min-w-max subpixel-antialiased overflow-hidden tap-highlight-transparent active:scale-97 active:shadow-none transition-transform-colors-opacity-shadow',

@@ -14,11 +14,15 @@
   .max-w-layout {
     max-width: 1248px;
   }
-  .primary-shadow {
+  .shadow-blum {
     box-shadow:
       0 5px 0 hsla(var(--color-primary), 0.4),
       0 0 50px 10px hsla(var(--color-primary), 0.7);
   }
+}
+
+html {
+  -webkit-overflow-scrolling: touch;
 }
 
 input:-webkit-autofill,

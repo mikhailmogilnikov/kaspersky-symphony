@@ -1,6 +1,6 @@
 import { HeroDogsDesktop } from './dogs-desktop';
 
-import { PuppyButton } from '@/shared/ui/puppy-button';
+import { PassQuizButton } from '@/features/pass-quiz';
 import { Text } from '@/shared/ui/text';
 import { View } from '@/shared/ui/view';
 
@@ -18,7 +18,7 @@ export const HeroSection = () => {
         >
           Kaspersky
         </Text>
-        <PuppyButton onClick={() => {}} />
+        <PassQuizButton />
       </View>
     </View>
   );
