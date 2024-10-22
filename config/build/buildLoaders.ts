@@ -16,7 +16,7 @@ export const buildLoaders = (options: BuildOptions): ModuleOptions['rules'] => {
 
   // Для поддержки ассетов
   const assetsLoader = {
-    test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf)$/i,
+    test: /\.(jpe?g|png|gif|webp|woff|woff2|eot|ttf)$/i,
     type: 'asset/resource',
     generator: {
       filename: (pathData: any) => {

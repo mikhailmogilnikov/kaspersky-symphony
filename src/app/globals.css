@@ -11,6 +11,14 @@
   .gradient-base {
     @apply bg-gradient-to-r from-success from-20% via-warning to-danger;
   }
+  .max-w-layout {
+    max-width: 1248px;
+  }
+  .primary-shadow {
+    box-shadow:
+      0 5px 0 hsla(var(--color-primary), 0.4),
+      0 0 50px 10px hsla(var(--color-primary), 0.7);
+  }
 }
 
 input:-webkit-autofill,
