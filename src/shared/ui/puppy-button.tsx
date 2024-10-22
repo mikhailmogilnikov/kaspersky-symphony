@@ -15,11 +15,7 @@ interface Props {
 export const PuppyButton = ({ onClick }: Props) => {
   return (
     <div className='relative'>
-      <Button
-        className='!primary-shadow gap-4 rounded-full px-32 py-12 shadow-2xl shadow-primary/40'
-        size='lg'
-        onClick={onClick}
-      >
+      <Button className='primary-shadow gap-4 rounded-full px-32 py-12' size='lg' onClick={onClick}>
         Пройти тест
         <ArrowRight />
       </Button>
