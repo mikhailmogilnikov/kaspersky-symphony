@@ -1,0 +1,1 @@
+export { PrizesSection } from './ui';
