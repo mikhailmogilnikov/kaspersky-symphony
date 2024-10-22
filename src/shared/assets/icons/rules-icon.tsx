@@ -1,9 +1,6 @@
-interface Props {
-  width?: number;
-  height?: number;
-}
+import { ISVGProps } from '@/shared/model/types/svg-props.type';
 
-function RulesIcon({ width = 14, height = 16 }: Props) {
+function RulesIcon({ width = 14, height = 16 }: ISVGProps) {
   return (
     <svg height={height} viewBox='0 0 14 16' width={width} xmlns='http://www.w3.org/2000/svg'>
       <path

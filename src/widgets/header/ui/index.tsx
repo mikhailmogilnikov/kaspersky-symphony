@@ -1,5 +1,5 @@
-import Logo from '@/shared/assets/media/logo';
-import RulesIcon from '@/shared/assets/media/rules-icon';
+import Logo from '@/shared/assets/icons/logo';
+import RulesIcon from '@/shared/assets/icons/rules-icon';
 import { Text } from '@/shared/ui/text';
 import { View } from '@/shared/ui/view';
 
@@ -9,7 +9,7 @@ export const Header = () => {
       <View>
         <Logo />
       </View>
-      <View centered as={'a'} href='/' width='fit'>
+      <View centered as='a' href='/' width='fit'>
         <RulesIcon />
         <Text className='-ml-2 text-nowrap' size='sm'>
           Правила конкурса

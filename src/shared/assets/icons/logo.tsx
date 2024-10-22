@@ -1,9 +1,6 @@
-interface Props {
-  width?: number;
-  height?: number;
-}
+import { ISVGProps } from '@/shared/model/types/svg-props.type';
 
-function Logo({ width = 129, height = 54 }: Props) {
+function Logo({ width = 129, height = 54 }: ISVGProps) {
   return (
     <svg height={height} viewBox='0 0 129 54' width={width} xmlns='http://www.w3.org/2000/svg'>
       <g clipPath='url(#clip0_424_75)'>

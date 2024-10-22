@@ -11,6 +11,11 @@
   .gradient-base {
     @apply bg-gradient-to-r from-success from-20% via-warning to-danger;
   }
+  .max-w-layout {
+    max-width: 1248px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 input:-webkit-autofill,
