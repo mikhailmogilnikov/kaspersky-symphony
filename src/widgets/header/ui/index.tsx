@@ -5,10 +5,8 @@ import { View } from '@/shared/ui/view';
 
 export const Header = () => {
   return (
-    <View centered as='header' className='my-6 py-4'>
-      <View>
-        <Logo />
-      </View>
+    <View as='header' className='my-6 py-4' items='center' justify='between'>
+      <Logo />
       <View centered as='a' href='/' width='fit'>
         <RulesIcon />
         <Text className='-ml-2 text-nowrap' size='sm'>

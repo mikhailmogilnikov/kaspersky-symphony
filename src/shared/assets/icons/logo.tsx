@@ -1,8 +1,8 @@
-import { ISVGProps } from '@/shared/model/types/svg-props.type';
+import { ISVGProps } from '../../model/types/svg-props.type';
 
-function Logo({ width = 129, height = 54 }: ISVGProps) {
+function Logo({ size = 129 }: ISVGProps) {
   return (
-    <svg height={height} viewBox='0 0 129 54' width={width} xmlns='http://www.w3.org/2000/svg'>
+    <svg viewBox='0 0 129 54' width={size} xmlns='http://www.w3.org/2000/svg'>
       <g clipPath='url(#clip0_424_75)'>
         <mask height='54' id='mask0_424_75' maskUnits='userSpaceOnUse' width='49' x='0' y='0'>
           <path d='M48.676 0H0V54H48.676V0Z' fill='white' />

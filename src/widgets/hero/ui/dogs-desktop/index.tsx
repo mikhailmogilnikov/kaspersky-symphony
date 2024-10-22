@@ -1,6 +1,6 @@
 import { DogsOptions } from '../../config/dogs-options';
 
-import { HeroDogDesktop } from './dog-desctop';
+import { HeroDogDesktop } from './dog-desktop';
 
 import { View } from '@/shared/ui/view';
 

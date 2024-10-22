@@ -13,8 +13,11 @@
   }
   .max-w-layout {
     max-width: 1248px;
-    padding-left: 16px;
-    padding-right: 16px;
+  }
+  .primary-shadow {
+    box-shadow:
+      0 5px 0 hsla(var(--color-primary), 0.4),
+      0 0 50px 10px hsla(var(--color-primary), 0.7);
   }
 }
 

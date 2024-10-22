@@ -1,4 +1,3 @@
 export interface ISVGProps {
-  width?: number;
-  height?: number;
+  size?: number;
 }
