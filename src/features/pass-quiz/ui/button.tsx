@@ -19,7 +19,7 @@ export const PassQuizButton = () => {
         <div className='h-96 w-10 bg-tretiary' />
         <div className='h-96 w-10 bg-primary' />
       </div>,
-      { scrollable: false, save: true, containerProps: { centered: false } },
+      { scrollable: true, save: false, containerProps: { centered: false } },
     );
   };
 

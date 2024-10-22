@@ -13,7 +13,7 @@ export const HeroSection = () => {
       <HeroDogsDesktop />
       <View centered vertical>
         <Text
-          className='mb-0 text-[56px] opacity-[4%] sm:text-[150px] md:text-[200px] lg:-mt-[386px] lg:text-[250px] xl:-mb-28 xl:-mt-[386px] xl:text-[306px]'
+          className='mb-0 select-none text-[56px] opacity-[4%] sm:text-[150px] md:text-[200px] lg:-mt-[386px] lg:text-[250px] xl:-mb-28 xl:-mt-[386px] xl:text-[306px]'
           weight={6}
         >
           Kaspersky

@@ -18,8 +18,8 @@ export const HeroDogDesktop = ({
   blockClassPosition,
 }: Props) => {
   return (
-    <View className={`absolute ${blockClassPosition}`} width='fit'>
-      <Picture alt={title} src={image} width={imageWidth} />
+    <View className={`absolute select-none ${blockClassPosition}`} width='fit'>
+      <Picture alt={title} draggable={false} src={image} width={imageWidth} />
       <Text className={`absolute ${textClassPosition}`} weight={5}>
         {title}
       </Text>
