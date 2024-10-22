@@ -20,7 +20,7 @@ export const HeroSection = () => {
       </MView>
 
       <Text heading={2} size='5xl'>
-        Heading text and font.
+        Шрифт для заголовков.
       </Text>
 
       <Button className='max-w-60 shadow-lg shadow-primary/40'>Отправить</Button>
