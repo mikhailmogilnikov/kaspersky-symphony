@@ -1,5 +1,4 @@
 import { Button } from '@/shared/ui/button';
-import { MView } from '@/shared/ui/motion-view';
 import { Text } from '@/shared/ui/text';
 import { View } from '@/shared/ui/view';
 
@@ -15,9 +14,9 @@ export const HeroSection = () => {
         <View className='gradient-base h-10 w-40' />
       </View>
 
-      <MView animate={{ x: 200 }} initial={{ x: 0 }}>
+      {/* <MView animate={{ x: 200 }} initial={{ x: 0 }}>
         <Text size='5xl'>Hello</Text>
-      </MView>
+      </MView> */}
 
       <Text heading={2} size='5xl'>
         Шрифт для заголовков.
