@@ -1,12 +1,11 @@
-function Logo() {
+interface Props {
+  width?: number;
+  height?: number;
+}
+
+function Logo({ width = 129, height = 54 }: Props) {
   return (
-    <svg
-      fill='none'
-      height='54'
-      viewBox='0 0 129 54'
-      width='129'
-      xmlns='http://www.w3.org/2000/svg'
-    >
+    <svg height={height} viewBox='0 0 129 54' width={width} xmlns='http://www.w3.org/2000/svg'>
       <g clipPath='url(#clip0_424_75)'>
         <mask height='54' id='mask0_424_75' maskUnits='userSpaceOnUse' width='49' x='0' y='0'>
           <path d='M48.676 0H0V54H48.676V0Z' fill='white' />
