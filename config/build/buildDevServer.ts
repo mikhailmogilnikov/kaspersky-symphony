@@ -5,7 +5,6 @@ import { BuildOptions } from './types/build.types';
 export const buildDevServer = (options: BuildOptions): Configuration => ({
   // На каком порту открывается localhost
   port: options.port,
-  open: true,
 
   // Чтобы обрабатывались другие роуты кроме '/' в React
   // * Если раздавать статику в NGINX, необходимо настроить проксирование на index.html
