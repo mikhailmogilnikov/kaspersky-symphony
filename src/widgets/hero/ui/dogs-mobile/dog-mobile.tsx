@@ -3,6 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import { Picture } from '@/shared/ui/picture';
 import { Text } from '@/shared/ui/text';
 import { View } from '@/shared/ui/view';
+import { cn } from '@/shared/lib/utils/ui';
 
 interface Props {
   image: string;
@@ -15,9 +16,9 @@ export const HeroDogMobile = ({ image, title, textClassPosition, blockClassPosit
   const isTablet = useMediaQuery({ query: '(min-width: 768px)' });
 
   return (
-    <View className={`relative ${blockClassPosition}`} width='fit'>
+    <View className={cn('relative', blockClassPosition)} width='fit'>
       <Picture alt={title} draggable={false} src={image} width={isTablet ? 420 : 280} />
-      <Text className={`absolute ${textClassPosition} text-sm`} weight={5}>
+      <Text className={cn('absolute text-sm', textClassPosition)} weight={5}>
         {title}
       </Text>
     </View>

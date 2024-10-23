@@ -1,4 +1,5 @@
 import { useMediaQuery } from 'react-responsive';
+import clsx from 'clsx';
 
 import { Picture } from '@/shared/ui/picture';
 import { Text } from '@/shared/ui/text';
@@ -8,7 +9,11 @@ import { CurvedLine } from '@/shared/assets/icons/curved-line';
 
 export const HeroDescription = () => {
   const isDesktop = useMediaQuery({ query: '(min-width: 1260px)' });
-  const isNotMobile = useMediaQuery({ query: '(min-width: 560px)' });
+  const isMobile = useMediaQuery({ query: '(min-width: 560px)' });
+
+  const subDescriptionClass = clsx('text-center text-sm xl:text-xl', {
+    'max-w-[420px]': !isMobile,
+  });
 
   return (
     <>
@@ -21,10 +26,7 @@ export const HeroDescription = () => {
         тебя классный тест!
       </Text>
       <View className='px-4' width='fit'>
-        <Text
-          className={`text-center text-sm xl:text-xl ${isNotMobile ? '' : 'max-w-[420px]'}`}
-          weight={3}
-        >
+        <Text className={subDescriptionClass} weight={3}>
           Проверь свою мощь в кибербезопасности и получи своего{' '}
           <span className='relative font-semibold'>
             тотемного пёселя{' '}
