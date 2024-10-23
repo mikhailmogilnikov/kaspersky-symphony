@@ -1,6 +1,6 @@
 import { HeroDogsDesktop } from './dogs-desktop';
 
-import { PuppyButton } from '@/shared/ui/puppy-button';
+import { PuppyButton } from '@/features/puppy-button';
 import { Text } from '@/shared/ui/text';
 import { View } from '@/shared/ui/view';
 
