@@ -1,4 +1,7 @@
-import { tv, VariantProps } from 'tailwind-variants';
+/* eslint-disable @conarti/feature-sliced/absolute-relative */
+import { VariantProps } from 'tailwind-variants';
+
+import { tv } from '@/shared/lib/utils/ui/tv';
 
 export const viewTv = tv({
   base: 'flex gap-base',

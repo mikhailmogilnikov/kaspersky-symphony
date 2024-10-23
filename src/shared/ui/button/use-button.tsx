@@ -24,6 +24,7 @@ export const useButton = (props: UseButtonProps) => {
     isDisabled,
     isLoading,
     isIconOnly,
+    disableAnimation,
     className,
     spinnerProps,
     ...otherProps
@@ -37,12 +38,13 @@ export const useButton = (props: UseButtonProps) => {
         fullWidth,
         color,
         size,
+        disableAnimation,
         isDisabled,
         isLoading,
         isIconOnly,
         className,
       }),
-    [fullWidth, color, isLoading, isDisabled, isIconOnly, className],
+    [fullWidth, color, isLoading, isDisabled, disableAnimation, isIconOnly, className],
   );
 
   return { Component, children, styles, ref, isDisabled, isLoading, spinnerProps, ...otherProps };
