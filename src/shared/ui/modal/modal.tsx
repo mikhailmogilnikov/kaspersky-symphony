@@ -21,19 +21,24 @@ export const Modal = () => {
             centered
             vertical
             animate='end'
-            className='relative bg-black/50 backdrop-blur-xl'
+            className='pointer-events-none relative z-20 px-4'
             exit='start'
             height='full'
             initial='start'
             style={{ overflowY: scrollable ? 'scroll' : 'hidden' }}
             variants={ModalContentVariants}
-            onClick={save ? undefined : closeModal}
             {...containerProps}
           >
-            <div className='z-20 w-fit' onClick={(e) => e.stopPropagation()}>
-              {modal}
-            </div>
+            {modal}
           </MView>
+          <m.button
+            animate='end'
+            className='fixed inset-0 z-10 bg-black/60 backdrop-blur-xl'
+            exit='start'
+            initial='start'
+            variants={ModalContentVariants}
+            onClick={save ? undefined : closeModal}
+          />
           <m.button
             animate='end'
             className='fixed right-4 top-4 z-30'
