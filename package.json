@@ -23,6 +23,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-remove-scroll": "^2.6.0",
+    "react-responsive": "^10.0.0",
     "react-router-dom": "^6.26.2",
     "tailwind-variants": "^0.2.1",
     "zod": "^3.23.8",

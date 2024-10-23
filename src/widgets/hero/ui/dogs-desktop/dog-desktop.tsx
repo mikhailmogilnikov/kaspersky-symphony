@@ -1,3 +1,4 @@
+import { cn } from '@/shared/lib/utils/ui';
 import { Picture } from '@/shared/ui/picture';
 import { Text } from '@/shared/ui/text';
 import { View } from '@/shared/ui/view';
@@ -18,9 +19,9 @@ export const HeroDogDesktop = ({
   blockClassPosition,
 }: Props) => {
   return (
-    <View className={`absolute select-none ${blockClassPosition}`} width='fit'>
+    <View className={cn('absolute select-none', blockClassPosition)} width='fit'>
       <Picture alt={title} draggable={false} src={image} width={imageWidth} />
-      <Text className={`absolute ${textClassPosition}`} weight={5}>
+      <Text className={cn('absolute select-none', textClassPosition)} weight={5}>
         {title}
       </Text>
     </View>
