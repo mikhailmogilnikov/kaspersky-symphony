@@ -11,6 +11,9 @@
   .gradient-base {
     @apply bg-gradient-to-r from-success from-20% via-warning to-danger;
   }
+  .text-gradient-base {
+    @apply gradient-base bg-clip-text text-transparent;
+  }
   .max-w-layout {
     max-width: 1248px;
   }

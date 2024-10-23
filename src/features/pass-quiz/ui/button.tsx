@@ -1,8 +1,8 @@
-import puppy1 from '@/shared/assets/images/button-puppies/puppy_1.png';
-import puppy2 from '@/shared/assets/images/button-puppies/puppy_2.png';
-import puppy3 from '@/shared/assets/images/button-puppies/puppy_3.png';
-import puppy4 from '@/shared/assets/images/button-puppies/puppy_4.png';
-import puppy5 from '@/shared/assets/images/button-puppies/puppy_5.png';
+import puppy1 from '@/shared/assets/images/puppies/puppy_1.png';
+import puppy2 from '@/shared/assets/images/puppies/puppy_2.png';
+import puppy3 from '@/shared/assets/images/puppies/puppy_3.png';
+import puppy4 from '@/shared/assets/images/puppies/puppy_4.png';
+import puppy5 from '@/shared/assets/images/puppies/puppy_5.png';
 import { ArrowRight } from '@/shared/assets/icons/arrow-right';
 import { Button } from '@/shared/ui/button';
 import { Picture } from '@/shared/ui/picture';

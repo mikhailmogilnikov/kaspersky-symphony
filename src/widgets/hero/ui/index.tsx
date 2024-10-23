@@ -1,4 +1,5 @@
 import { HeroDogsDesktop } from './dogs-desktop';
+import { HeroDescription } from './description';
 
 import { PassQuizButton } from '@/features/pass-quiz';
 import { Text } from '@/shared/ui/text';
@@ -20,6 +21,7 @@ export const HeroSection = () => {
         </Text>
         <PassQuizButton />
       </View>
+      <HeroDescription />
     </View>
   );
 };
