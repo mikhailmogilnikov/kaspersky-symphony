@@ -7,20 +7,13 @@ import { ArrowRight } from '@/shared/assets/icons/arrow-right';
 import { Button } from '@/shared/ui/button';
 import { Picture } from '@/shared/ui/picture';
 import { useModal } from '@/shared/ui/modal';
+import { Quiz } from '@/entities/quiz';
 
 export const PassQuizButton = () => {
   const { setModal } = useModal();
 
   const handleOpenQuiz = () => {
-    setModal(
-      <div className='w-fit'>
-        <div className='h-96 w-10 bg-primary' />
-        <div className='h-96 w-10 bg-secondary' />
-        <div className='h-96 w-10 bg-tretiary' />
-        <div className='h-96 w-10 bg-primary' />
-      </div>,
-      { scrollable: true, save: false, containerProps: { centered: false } },
-    );
+    setModal(<Quiz />, { save: false, scrollable: true });
   };
 
   return (

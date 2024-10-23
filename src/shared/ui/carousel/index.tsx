@@ -1,18 +1,17 @@
+import './index.css';
+
 import React from 'react';
 import { EmblaOptionsType } from 'embla-carousel';
+import useEmblaCarousel from 'embla-carousel-react';
 
 import { DotButton, useDotButton } from './carousel-dot-button';
 
-import './index.css';
-import useEmblaCarousel from 'embla-carousel-react';
-
-type PropType = {
+export type CarouselProps = {
   slides: React.ReactNode[];
   options?: EmblaOptionsType;
 };
 
-const Carousel: React.FC<PropType> = (props) => {
-  const { slides, options } = props;
+const Carousel = ({ slides, options }: CarouselProps) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
