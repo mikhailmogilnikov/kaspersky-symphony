@@ -6,6 +6,7 @@ import { MobileDogsOptions } from '../../config/mobile-dogs-options';
 import { HeroDogMobile } from './dog-mobile';
 
 import Carousel from '@/shared/ui/carousel';
+import { View } from '@/shared/ui/view';
 
 export const HeroDogsMobile = () => {
   const OPTIONS: EmblaOptionsType = { loop: true };
@@ -33,5 +34,9 @@ export const HeroDogsMobile = () => {
     );
   });
 
-  return <Carousel options={OPTIONS} slides={slides} />;
+  return (
+    <View className='w-dvw'>
+      <Carousel options={OPTIONS} slides={slides} />
+    </View>
+  );
 };
