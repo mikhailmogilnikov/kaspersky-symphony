@@ -40,21 +40,21 @@ export const QuizProgressBar = () => {
         </Text>
         <Text
           className='z-10 transition-colors'
-          color={correctAnswersCount > 2 ? 'bg' : 'fg'}
+          color={correctAnswersCount > 1 ? 'bg' : 'fg'}
           weight={5}
         >
           Symphony MDR
         </Text>
         <Text
           className='z-10 transition-colors'
-          color={correctAnswersCount > 4 ? 'bg' : 'fg'}
+          color={correctAnswersCount > 3 ? 'bg' : 'fg'}
           weight={5}
         >
           Symphony EDR
         </Text>
         <Text
           className='z-10 transition-colors'
-          color={correctAnswersCount > 6 ? 'bg' : 'fg'}
+          color={correctAnswersCount > 5 ? 'bg' : 'fg'}
           weight={5}
         >
           Symphony XDR
