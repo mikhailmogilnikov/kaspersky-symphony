@@ -11,6 +11,8 @@ export const HomePage = () => {
       <View vertical className='max-w-layout container mx-auto px-4'>
         <Header />
         <HeroSection />
+      </View>
+      <View vertical className='container mx-auto px-4'>
         <PrizesSection />
         <CallToActionSection />
         <Footer />
