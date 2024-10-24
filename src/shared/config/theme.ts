@@ -11,6 +11,7 @@ export const appTheme: CorePluginConfig['themes'] = {
       success: 'hsl(141, 41%, 53%)',
       warning: 'hsl(54, 88%, 48%)',
       danger: 'hsl(23, 77%, 56%)',
+      default: 'hsl(210, 24%, 19%)',
     },
   },
 };

@@ -19,8 +19,8 @@ export const HeroDescription = () => {
     <>
       <Text
         as='h2'
-        className='mt-10 max-w-[700px] text-center text-[20px] leading-7 md:text-[32px] md:leading-10 lg:leading-10 xl:text-[40px] xl:leading-10'
-        weight={5}
+        className='mt-10 max-w-[720px] text-center text-[20px] leading-7 md:text-[32px] md:leading-10 lg:leading-10 xl:text-[40px] xl:leading-10'
+        weight={6}
       >
         Kaspersky и <span className='text-gradient-base'>технология Symphony</span> подготовили для
         тебя классный тест!
