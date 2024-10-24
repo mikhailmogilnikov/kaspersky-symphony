@@ -1,4 +1,6 @@
 import { AnimatePresence, m } from 'framer-motion';
+import { useMediaQuery } from 'react-responsive';
+import clsx from 'clsx';
 
 import { TypesColors } from '../../config/types-colors';
 
@@ -9,9 +11,14 @@ import { cn } from '@/shared/lib/utils/ui';
 interface Props {
   hoveredPrize: EPrizeTypes | null;
   type: EPrizeTypes;
+  tabType: EPrizeTypes;
+  setTabType: (type: EPrizeTypes) => void;
+  isDesktop: boolean;
 }
 
-export const PrizesType = ({ hoveredPrize, type }: Props) => {
+export const PrizesType = ({ hoveredPrize, type, isDesktop, tabType, setTabType }: Props) => {
+  const isMobile = !useMediaQuery({ query: '(min-width: 600px)' });
+
   const animationProps = {
     initial: { opacity: 0, filter: 'blur(12px)' },
     animate: { opacity: 1, filter: 'blur(0px)' },
@@ -19,16 +26,33 @@ export const PrizesType = ({ hoveredPrize, type }: Props) => {
     transition: { duration: 0.3 },
   };
 
+  const handleClick = () => {
+    if (!isDesktop) {
+      setTabType(type);
+    }
+  };
+
+  const wrapperClass = clsx('relative h-full px-4 py-4', {
+    'px-2': isMobile,
+  });
+
+  const typeClass = clsx(
+    'inner-shadow h-full w-full rounded-xl bg-white bg-opacity-10 px-12 py-4 text-lg leading-5',
+    {
+      'max-w-[160px] text-wrap px-6 py-2': isMobile,
+    },
+    {
+      'text-nowrap': !isMobile,
+    },
+  );
+
   return (
-    <View centered className='relative px-4 py-4' width='fit'>
-      <View
-        className='inner-shadow rounded-2xl bg-white bg-opacity-10 px-12 py-3 text-lg'
-        width='fit'
-      >
+    <View centered className={wrapperClass} width={isDesktop ? 'fit' : 'full'}>
+      <button className={typeClass} onClick={handleClick}>
         {type}
-      </View>
+      </button>
       <AnimatePresence>
-        {hoveredPrize === type ? (
+        {(isDesktop && hoveredPrize === type) || (!isDesktop && tabType === type) ? (
           <>
             <m.div
               {...animationProps}

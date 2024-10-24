@@ -1,36 +1,36 @@
 import { useState } from 'react';
-
-import { PrizesList } from '../config/prizes-list';
+import { useMediaQuery } from 'react-responsive';
 
 import { PrizesTypes } from './types';
 import { BottomBlur } from './bottom-blur';
+import { DesktopCards } from './desktop-cards';
+import { MobileCards } from './mobile-cards';
 
 import { Text } from '@/shared/ui/text';
 import { View } from '@/shared/ui/view';
-import { EPrizeTypes, PrizeCard } from '@/entities/prize';
-import { cn } from '@/shared/lib/utils/ui';
+import { EPrizeTypes } from '@/entities/prize';
 
 export const PrizesSection = () => {
   const [hoveredPrize, setHoveredPrize] = useState<null | EPrizeTypes>(null);
+  const [tapType, setTabType] = useState<EPrizeTypes>(EPrizeTypes.SYMPHONY_SECURITY);
+  const isDesktop = useMediaQuery({ query: '(min-width: 1280px)' });
 
   return (
     <View centered vertical as='section' className='relative mt-40 pb-20'>
-      <Text as={'h1'} className='text-[40px]' weight={6}>
+      <Text as={'h1'} className='text-center text-[24px] md:text-[32px] lg:text-[40px]' weight={6}>
         Призы от <span className='text-gradient-base'>Kaspersky</span>
       </Text>
-      <PrizesTypes hoveredPrize={hoveredPrize} />
-      <View>
-        {PrizesList.map((prize) => (
-          <View
-            key={prize.name}
-            className={cn('-ml-16 first:ml-0', prize.cardClass)}
-            onMouseOut={() => setHoveredPrize(null)}
-            onMouseOver={() => setHoveredPrize(prize.type)}
-          >
-            <PrizeCard {...prize} />
-          </View>
-        ))}
-      </View>
+      <PrizesTypes
+        hoveredPrize={hoveredPrize}
+        isDesktop={isDesktop}
+        setTabType={setTabType}
+        tabType={tapType}
+      />
+      {isDesktop ? (
+        <DesktopCards setHoveredPrize={setHoveredPrize} />
+      ) : (
+        <MobileCards tabType={tapType} />
+      )}
 
       <BottomBlur />
     </View>
